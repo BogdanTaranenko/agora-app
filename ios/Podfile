@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+react_native_path = "../node_modules/react-native"
+project "AgoraRNQuickStart.xcodeproj"
+
+target 'AgoraRNQuickStart' do
+  pod "react-native-agora", path: "../node_modules/react-native-agora"
+  pod 'yoga', path: '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+  pod 'React', path: '../node_modules/react-native'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+end
